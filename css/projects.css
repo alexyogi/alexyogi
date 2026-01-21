@@ -1,0 +1,205 @@
+/* General */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #202020;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Fade-in on scroll (whole page) --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility: respect reduced motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* --- Navigation Bar --- */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item-left {
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+.nav-caption {
+    font-style: italic;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 1em;
+}
+
+.right-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #a9a9a9;
+}
+
+.nav-item-left a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item-left a:hover {
+    color: #a9a9a9;
+}
+
+/* --- Hero --- */
+#hero {
+    background: #202020;
+    color: #f4f4f4;
+    font-size: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+/* Fade-in on scroll (Hero specific)*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: slightly faster hero animation */
+#hero.fade-in {
+  transition-duration: 0.5s;
+}
+
+/* --- General Sections --- */
+section {
+    padding: 2em;
+    margin: 2em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* UX Nav App */
+.navapp-details {
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+.navapp img {
+    width: 450px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Spacing between image and text */
+}
+.navapp .navapp-details {
+    flex: 1; /* Allow text to take remaining space */
+    max-width: 970px;
+}
+
+
+/* Sewing Machine */
+.sewing-details {
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+.sewing img {
+    width: 450px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.sewing .sewing-details {
+    flex: 1; /* Allow text to take remaining space */
+    max-width: 970px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px; /* Add padding to the button */
+    background-color: #0066cc; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 5px; /* Add margin above the button */
+}
+
+.btn:hover {
+    background-color: #0055a3; /* Darken button color on hover */
+}
+
+.more-button {
+    padding: 25px 0;
+}
+
+/* OTV */
+.otv-details {
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+.otv img {
+    width: 450px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.otv .otv-details {
+    flex: 1; /* Allow text to take remaining space */
+    max-width: 970px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}
+
+

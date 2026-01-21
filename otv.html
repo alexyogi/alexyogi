@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/projects/otv.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item-left"><a href="index.html">Alex Yogiaveetil</a></li>
+                <li class="nav-caption">InfoDesign Student</li>
+                <div class="right-nav">
+                    <li class="nav-item"><a href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero fade-in">
+            <h1>Over Terrain Vehicle Project</h1>
+        </section>
+        <section id="reqs">
+            <div class="background fade-in">
+                <h1>Mission Background - Data Extraction</h1>
+                <p>During descent, one of the payloads was damaged and released a hazardous material. However, there is important data stored on the payload that must be extracted and analyzed within 24 hours of the payload landing. The payload’s data is stored on an Arduino that has output ports for data transmission.</p>
+            </div>
+            <div class="mission fade-in">
+                <img src="images/otv/pylon.png" alt="pylon">
+                <div class="mission-details">
+                    <h1>Mission Objectives</h1>
+                    <p>1. Navigate to within 150 mm of the pylon.</p>
+                    <p>2. Physically connect to both of the pylon output ports.</p>
+                    <p>3. Extract and correctly transmit the duty cycle of the signal square wave to within 5%.</p>
+                    <p>4. Identify and transmit the magnetism of material in the base of the pylon (magnetic or non-magnetic).</p>
+                    <p>5. Navigate completely past the three obstacles.</p>
+                    <p>6. Navigate completely into the destination zone.</p>
+                </div>
+            </div>
+            <div class="vehicle fade-in">
+                <h1>Vehicle Requirements</h1>
+                <p>1. Total OTV mass  must be no heavier than 3 kg.</p>
+                <p>2. Pre-built chassis assemblies may perform functions from at most two of the following categories: (1) motors / gearmotors; (2) wheels / tires / treads; (3) suspension; (3) transmission / differential / drivetrain; (5) motor controllers.</p>
+                <p>3. No building-systems or robotics kits such as Lego, Knex, Vex are allowed.</p>
+                <p>4. There must be an Aruco tracking marker with dimensions between 50x50mm and 100x100mm with a 15mm white border placed on the top of the vehicle/chassis.</p>
+                <div class="aruco">
+                    <img src="images/otv/aruco2.gif" alt="aruco">
+                </div>
+                <p>5. No exposed pins, nails, razor blades, or other dangerously sharp objects are permitted on the OTV/chassis.</p>
+                <p>6. Total as-built replacement cost must be less than $320.</p>
+            </div>
+            <div class="challenges fade-in">
+                <h1>Some challenges for this project include:</h1>
+                <p>1. Making the chassis sturdy while also allowing some give for shock/vibration absorption</p>
+                <p>2. Supporting the weight of the arm, propulsion, and electronics components without having the chassis bend</p>
+                <p>3. Allowing a smooth and generous turning radius for the wheels when turning corners</p>
+                <p>4. Accurately placing the arm over the pylon so it can be lowered</p>
+                <p>5. Lining up the data connections properly</p>
+            </div>
+        </section>
+        <section id="design">
+            <div class="mission-design fade-in">
+                <h1>Design Justification</h1>
+                <p>The mission will utilize a data extraction arm controlled by a single servo motor which will be able to raise and lower the arm into and out of the pylon. The arm will be 3D-printed from PLA plastic and will be attached inside of a 3D-printed vertical rail. The back of the arm will interact with a gear and form a rack-and-pinion system (also made of PLA plastic) that will allow for vertical translation of the arm. The rail will be permanently fixed to the chassis using fasteners which will prevent unnecessary arm motion.</p>
+                <p>The arm will be placed on the front of the OTV with the arm reaching out over the triangular cutout in the chassis. The arm rails will be placed at the base of the cutout. The mission will be carried out by using a number of data collection sensors. A hall magnetic sensor will be used to determine the magnetism of the puck at the base of the pylon. Copper wiring will be attached to the inside of the arm to contact the data outputs. The wire will transmit the voltage output of the signal and will measure voltage through the Arduino microcontroller. This voltage will be recorded over a given time period and averaged in order to calculate duty cycle. This data can be wirelessly transmitted with a WIFI module to the ENES lab computer.</p>
+                <div class="mission-design-images">
+                    <img src="images/otv/data-arm.png" alt="data arm">
+                    <img src="images/otv/triangle.png" alt="triangular cut">
+                </div>
+            </div>
+            <div class="materials fade-in">
+                <h1>Materials and Construction Method</h1>
+                <p>1. Plywood birch sheets</p>
+                <div class="wood-details">
+                    <li class="details">Used for the chassis</li>
+                    <li class="details">Purchased in sheets and cut into exact dimensions</li>
+                    <li class="details">Attachment holes for screws will be drilled into exact dimensions</li>
+                </div>
+                <p>2. PLA filament</p>
+                <div class="pla-details">
+                    <li class="details">Rendered in CAD and 3D printed</li>
+                    <li class="details">Used for the custom-made parts for the mission</li>
+                </div>
+                <p>3. Ordered parts</p>
+                <div class="parts-details">
+                    <li>Parts such as tires, motors, sensors, etc.</li>
+                    <li>Screws to put parts together</li>
+                </div>
+            </div>
+            <div class="chassis fade-in">
+                <h1>Chassis Design</h1>
+                <p>I was on the chassis subteam, focusing on the design and prototyping of the vehicle chassis. The chassis needs to provide space for electronics that will be connected to arm and wheels, as well as arduino mount. The design includes four extensions to house four motors to enable four wheel drive. The trapezoidal cutout serves to guide the pylon to the right place and gives the arm space to lower for data extraction. Additionally, the size and shape allow the chassis to balance the weight of the arm and prevent any tipping.</p>
+                <div class="chassis-drawing">
+                    <img src="images/otv/chassis-drawing1.png" alt="chassis drawings">
+                    <img src="images/otv/chassis-drawing2.png" alt="chassis drawings">
+                </div>
+                <div class="final-chassis fade-in">
+                    <h1>Final Chassis Design</h1>
+                    <div class="final-chassis-details">
+                        <img src="images/otv/chassis-cad.png" alt="final chassis">
+                        <p>This is a CAD rendering for the final design. After starting the prototyping process, we encountered some issues and decided to tweak the original design. We noticed that we needed to add an extra cutout to the triangle in order to allow the extraction arm to operate properly. Additionally, we added railing structures to either side to provide more space for electronics on the chassis. We moved the aruco marker onto a custom cut acrylic sheet, which went on top of the railings. It also helped managed all the wires above the chassis, preventing it from accidentally getting caught or snagged on surrounding objects.</p>
+                    </div>
+                </div>
+                <div class="og-otv fade-in">
+                    <h1>Preliminary OTV Design</h1>
+                    <div class="og-details">
+                        <img src="images/otv/primary-cad.png" alt="Preliminary Design">
+                        <p>Rendering of the original design for the OTV extracting data from the mission pylon</p>
+                    </div>
+                    <h2>Final OTV Design</h2>
+                    <div class="otv-cad fade-in">
+                        <img src="images/otv/front-cad.png" alt="front iso">
+                        <img src="images/otv/back-cad.png" alt="back iso">
+                    </div>
+                    <p>Rendering of the final design with upgraded chassis</p>
+                </div>
+            </div>
+            <div class="other fade-in">
+                <h1>Other Integral Components</h1>
+                <div class="wheels">
+                    <h2>Large Wheels</h2>
+                    <div class="wheel-pics">
+                        <img src="images/otv/wheels.png" alt="wheel cad">
+                        <img src="images/otv/wheels-amazon.png" alt="wheels on amazon">
+                        <p>In addition to the unique data extraction mission that our OTV has to execute, it has to complete an obstacle course that includes either going over a hump or under a beam. The data extraction arm already made the vehicle a little tall, so we decided to go over the hump because the vehicle could complete it more confidently. In order to accomodate this, we chose to design our OTV with large, all-terrain tires, giving the vehicle a large ground clearance and the ability to easily traverse the obstable. We ordered these wheels on Amazon.</p>
+                    </div>
+                </div>
+                <div class="sensor fade-in">
+                    <h1>Ultrasonic Sensor</h1>
+                    <div class="dist-sensor">
+                        <img src="images/otv/sensor.png" alt="ultrasonic sensor cad">
+                        <img src="images/otv/sensor2.png" alt="sensor diagram">
+                        <p>Another section of the course requires the vehicle to manuever around 1-2 obstables. The ultrasonic sensor is placed on the other side of the chassis, so that is doesn't interfere with the data extrcation arm. Therefore, we had the vehicle drive "backwards" for this section. The sensor allows the vehicle to detect objects, and how far away they are as well.</p>
+                    </div>
+                </div>
+                <div class="motor fade-in">
+                    <h1>Motors</h1>
+                    <div class="motor-pics">
+                        <img src="images/otv/motor.png" alt="motor">
+                        <img src="images/otv/hex.png" alt="hex adapter">
+                        <p>We decided to use this motor from Pololu. We had to also order these 12mm hex wheel adapters to make the motors compatible with the large wheels we chose. These adapters screw onto the motor gearshaft, then connect to the wheels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="changes" class="fade-in">
+            <h1>Design Iterations</h1>
+            <div class="redesign fade-in">
+                <h2>Motor Mount Redesign</h2>
+                <div class="motor-mount fade-in">
+                    <img src="images/otv/otv-motormount.png" alt="mount">
+                    <img src="images/otv/motor+mount.png" alt="mount">
+                    <img src="images/otv/motormount-closeup.png" alt="mount">
+                </div>
+            </div>
+            <p>During assembly, we discovered that the motor fit loosely within the initial motor mount once the physical motors arrived. The opening diameter and contact surfaces were adjusted to reduce excess clearance and improve alignment, ensuring the motor remained securely supported during mission. This process emphasized the importance of validating CAD assumptions against real components and accounting for manufacturing tolerances to achieve a reliable final design.</p>
+        </section>
+        <section id="final">
+            <div class="final-build fade-in">
+                <h1>Final OTV Build</h1>
+                <div class="final-build-images fade-in">
+                    <img src="images/otv/otv-finalbuild.png" alt="final build">
+                    <img src="images/otv/otv-finalbuild2.png" alt="final build">
+                </div>
+                <div class="otv-oncourse fade-in">
+                    <img src="images/otv/otv-pylon.png" alt="otv">
+                    <img src="images/otv/otv-pylon2.png" alt="otv2">
+                </div>
+                <div class="otv-oncourse fade-in">
+                    <img src="images/otv/otv-ia1.png" alt="otv1">
+                    <img src="images/otv/otv-ia2.png" alt="otv2">
+                </div>
+                <p>These images document the completed prototype during assembly and testing, showcasing the integration of the mechanical frame, drive system, electronics, and sensor components. The vehicle was tested in a controlled indoor environment with obstacles to evaluate mobility, stability, and structural integrity under real operating conditions. The final build reflects multiple design iterations, including refinements to the chassis geometry and motor mounting, resulting in a functional platform capable of traversing uneven terrain while securely housing onboard electronics and hardware.</p>
+            </div>
+            <div class="test fade-in">
+                <h1>Final Performance Assessment and Results</h1>
+                <p>This assessment examines the OTV’s performance during mission execution to verify that design requirements are met.</p>
+                <div class="test-vid fade-in">
+                    <video 
+                        controls 
+                        muted 
+                        playsinline 
+                        preload="metadata">
+                        <source src="images/otv/otv-performancetest.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>During preliminary testing, the vehicle performed as intended and demonstrated reliable mobility, steering, and overall system functionality. However, on the final performance assessment day, an issue arose with one of the front wheels that prevented the vehicle from turning correctly. As a result, the OTV was unable to properly adjust its heading and did not reach the pylon as intended during the mission. The wheel continued to experience intermittent issues throughout the assessment, which ultimately prevented the vehicle from completing the entire mission successfully. Despite this setback, the test highlighted the importance of mechanical robustness and real-time reliability under mission conditions.</p>
+            </div>
+            <div class="conclusion fade-in">
+                <h1>Reflection</h1>
+                <div class="otv-poster fade-in">
+                    <img src="images/otv/otvposter.png" alt="poster">
+                    <p>Final Project Poster summarizing the design, construction, control algorithm, and performance results of our OTV data extraction mission.</p>
+                </div>
+                <p>This project emphasized the importance of iterative design, system integration, and validating assumptions through real-world testing. While the vehicle performed well during preliminary trials, the final assessment highlighted how small mechanical issues can significantly impact mission success. With additional time, the front wheel issue could have been resolved through further iteration and testing, ensuring reliable operation and successful mission completion. Overall, the project reinforced the value of designing for robustness, tolerances, and long-term reliability in mission-driven engineering systems.</p>
+            </div>
+            <div class="design-brief fade-in">
+                <a href="images/otv/MS9 Final Design Brief.pdf" class="pdf-button" target="_blank">Download Project Design Brief (PDF)</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

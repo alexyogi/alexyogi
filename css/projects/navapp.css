@@ -1,0 +1,228 @@
+/* General */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #202020;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Fade-in on scroll (whole page) --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility: respect reduced motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* --- Navigation Bar --- */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item-left {
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+.nav-caption {
+    font-style: italic;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 1em;
+}
+
+.right-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #a9a9a9;
+}
+
+.nav-item-left a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item-left a:hover {
+    color: #a9a9a9;
+}
+
+/* --- Hero --- */
+#hero {
+    background: #202020;
+    color: #f4f4f4;
+    font-size: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+/* Fade-in on scroll (Hero specific)*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: slightly faster hero animation */
+#hero.fade-in {
+  transition-duration: 0.5s;
+}
+
+/* --- General Sections --- */
+section {
+    padding: 1em;
+    margin: 2em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Reqs */
+.personas-image {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.personas-image img {
+    width: 800px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.userflow-image {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.userflow-image img {
+    width: 800px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.journeymap-image {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.journeymap-image img {
+    width: 650px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.research-details {
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+.lowmockup-images {
+  display: flex;
+  justify-content: center;   /* centers them horizontally */
+  align-items: center;       /* aligns them vertically */
+  gap: 20px;                 /* spacing between images */
+}
+
+.lowmockup-images img {
+    width: 450px;
+    height: auto;
+}
+
+.highfiddraft-image {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.highfiddraft-image img {
+    width: 850px;
+    height: auto;
+}
+
+.highfid-image {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.highfid-image img {
+    width: 850px;
+    height: auto;
+}
+
+.maps-pages {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.maps-pages img {
+    width: 1200px;
+    height: auto;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}

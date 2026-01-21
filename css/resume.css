@@ -1,0 +1,269 @@
+/* General */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #202020;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Fade-in on scroll (whole page) --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility: respect reduced motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* --- Navigation Bar --- */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item-left {
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+.nav-caption {
+    font-style: italic;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 1em;
+}
+
+.right-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #a9a9a9;
+}
+
+.nav-item-left a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item-left a:hover {
+    color: #a9a9a9;
+}
+
+/* --- Hero --- */
+#hero {
+    background: #202020;
+    color: #f4f4f4;
+    font-size: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+/* --- General Sections --- */
+section {
+    padding: 2em;
+    margin: 2em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Education */
+.school-1 {
+    display: flex;
+}
+
+.school-1 img {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.umd-caption {
+    flex: 1; /* Allow text to take remaining space */
+}
+
+.umd-caption h3 {
+    line-height: 0.25;
+}
+
+.umd-caption p {
+    line-height: 0.25;
+}
+
+.school-2 {
+    display: flex;
+    padding-top: 35px;
+}
+
+.school-2 img {
+    width: 200px; /* Adjust width as needed */
+    height: 190px; /* Maintain aspect ratio */
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.ashs-caption {
+    flex: 1; /* Allow text to take remaining space */
+}
+
+.ashs-caption h4 {
+    line-height: 0.25;
+}
+
+.ashs-caption p {
+    line-height: 0.25;
+}
+
+/* Work Experience */
+#tech-exp h5 {
+    font-size: 25px;
+}
+
+.tech-1 h6 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.tech-1 p {
+    margin-top: 5px;
+}
+
+.tech-2 h1 {
+    font-size: 20px;
+}
+
+/* Skills */
+.sw-button {
+    width: 160px;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sw-button:hover {
+    background-color: #cc0000; /* Darken button color on hover */
+}
+
+.fusion-button {
+    width: 160px;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.fusion-button:hover {
+    background-color: #ed6300; /* Darken button color on hover */
+}
+
+.inventor-button {
+    width: 160px;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #202020;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.inventor-button:hover {
+    background-color: #c19e17; /* Darken button color on hover */
+}
+
+.tech-skills {
+    display: flex;
+}
+
+.tech-skills img {
+    width: auto;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.tech-skills p {
+    align-items: center;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+.langs {
+    display: flex;
+}
+
+.langs img {
+    width: 25px; /* Adjust width as needed */
+    height: 25px; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+.langs p {
+    align-items: center;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}

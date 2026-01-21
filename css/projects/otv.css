@@ -1,0 +1,356 @@
+/* General */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #202020;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Fade-in on scroll (whole page) --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility: respect reduced motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* --- Navigation Bar --- */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item-left {
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+.nav-caption {
+    font-style: italic;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 1em;
+}
+
+.right-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #a9a9a9;
+}
+
+.nav-item-left a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item-left a:hover {
+    color: #a9a9a9;
+}
+
+/* --- Hero --- */
+#hero {
+    background: #202020;
+    color: #f4f4f4;
+    font-size: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+/* --- General Sections --- */
+section {
+    padding: 1em;
+    margin: 2em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Reqs */
+.mission {
+    display: flex;
+}
+
+.mission img {
+    width: 200px;
+    height: auto;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.aruco img {
+    width: 200px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Design */
+.mission-design-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-design-images img {
+    height: 300px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.chassis-drawing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chassis-drawing img {
+    width: 450px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.final-chassis-details {
+    display: flex;
+    align-items: center;
+}
+
+.final-chassis-details img {
+    width: 500px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.final-chassis-details p {
+    max-width: 500px;
+}
+
+.og-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.og-details img {
+    width: 500px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.og-details p {
+    font-style: italic;
+}
+
+.otv-cad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otv-cad img {
+    height: 400px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.og-otv p {
+    text-align: center;
+    font-style: italic;
+}
+
+.wheel-pics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wheel-pics img {
+    height: 350px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.dist-sensor {
+    display: flex;
+    align-items: center;
+}
+
+.dist-sensor img {
+    height: 300px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.dist-sensor p {
+    max-width: 500px;
+}
+
+.motor-pics {
+    display: flex;
+    align-items: center;
+}
+
+.motor-pics img {
+    height: 300px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.motor-pics p {
+    max-width: 300px;
+}
+
+.motor-mount {
+  display: flex;
+  justify-content: center;   /* centers them horizontally */
+  align-items: center;       /* aligns them vertically */
+  gap: 20px;                 /* spacing between images */
+}
+
+.motor-mount img {
+    width: auto;
+    height: 225px;
+}
+
+.final-build-images {
+  display: flex;
+  justify-content: center;   /* centers them horizontally */
+  align-items: center;       /* aligns them vertically */
+  gap: 20px;                 /* spacing between images */
+}
+
+.final-build-images img {
+    width: auto;
+    height: 300px;
+}
+
+.otv-oncourse {
+  display: flex;
+  justify-content: center;   /* centers them horizontally */
+  align-items: center;
+  margin-top: 20px;       /* aligns them vertically */
+  gap: 20px;                 /* spacing between images */
+}
+
+.otv-oncourse img {
+    width: auto;
+    height: 400px;
+}
+
+.test-vid {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* .assembly-vid h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+} */
+
+.test-vid video {
+  width: 900px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional subtle hover effect */
+.test-vid video:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.test-vid video {
+  animation-delay: 0.15s;
+}
+
+.pdf-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #111;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.pdf-button:hover {
+  background-color: #333;
+  transform: translateY(-1px);
+}
+
+.pdf-button:active {
+  transform: translateY(0);
+}
+
+.otv-poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.otv-poster img {
+    width: 950px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.otv-poster p {
+    font-style: italic;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,279 @@
+/* General */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #202020;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Fade-in on scroll (whole page) --- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility: respect reduced motion settings */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* --- Navigation Bar --- */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item-left {
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+.nav-caption {
+    font-style: italic;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 1em;
+}
+
+.right-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #a9a9a9;
+}
+
+.nav-item-left a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item-left a:hover {
+    color: #a9a9a9;
+}
+
+/* --- Hero --- */
+#hero {
+    background: #202020;
+    color: #f4f4f4;
+    font-size: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+/* --- General Sections --- */
+section {
+    padding: 1em;
+    margin: 2em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.both-casing {
+  display: flex;
+  justify-content: center;   /* centers them horizontally */
+  align-items: center;       /* aligns them vertically */
+  gap: 20px;                 /* spacing between images */
+}
+
+.both-casing img {
+    width: auto;
+    height: 300px;
+}
+
+.case-drawings {
+  display: flex;
+  justify-content: center;   /* centers them horizontally */
+  align-items: center;       /* aligns them vertically */
+  gap: 20px;                 /* spacing between images */
+}
+
+.case-drawings img {
+    width: auto;
+    height: 450px;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.cover img {
+    width: 600px;
+    height: auto;
+}
+
+.cover-drawing {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.cover-drawing img {
+    width: 850px;
+    height: auto;
+}
+
+.spool {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.spool img {
+    width: 400px;
+    height: auto;
+}
+
+.spool-drawing {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.spool-drawing img {
+    width: 850px;
+    height: auto;
+}
+
+.axle {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.axle img {
+    width: 600px;
+    height: auto;
+}
+
+.axle-drawing {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    margin-top: 20px;
+}
+
+.axle-drawing img {
+    width: 850px;
+    height: auto;
+}
+
+.assembly {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    gap: 20px;
+}
+
+.assembly img {
+    width: auto;
+    height: 400px;
+}
+
+.assembly-animate {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* .assembly-vid h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+} */
+
+.assembly-animate video {
+  width: 900px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional subtle hover effect */
+.assembly-animate video:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.assembly-animate video {
+  animation-delay: 0.15s;
+}
+
+.support-beam {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    gap: 20px;
+}
+
+.support-beam img {
+    width: auto;
+    height: 250px;
+}
+
+.fea-images {
+    display: flex;
+    justify-content: center;   /* centers the image horizontally */
+    align-items: center;       /* aligns the image vertically */
+    gap: 20px;
+}
+
+.fea-images img {
+    width: auto;
+    height: 250px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}

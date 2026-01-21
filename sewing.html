@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/projects/sewing.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item-left"><a href="index.html">Alex Yogiaveetil</a></li>
+                <li class="nav-caption">InfoDesign Student</li>
+                <div class="right-nav">
+                    <li class="nav-item"><a href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero fade-in">
+            <h1>Sewing Machine Project</h1>
+        </section>
+        <section id="reqs">
+            <div class="background fade-in">
+                <h1>Project Background</h1>
+                <p>This project focused on the end-to-end design and analysis of a mechanical system using SolidWorks. Working in a collaborative team environment, we modeled and assembled a fully functional mechanical system, producing detailed engineering drawings, animations, and supporting analyses. The project emphasized practical application of mechanical design principles, CAD proficiency, and clear technical communication, while simulating a real-world engineering design workflow from concept through validation.</p>
+            </div>
+            <div class="description fade-in">
+                <h1>System Description</h1>
+                <p>The project involved designing and modeling a mechanically driven antique sewing machine powered by a foot-operated pump pedal. The system consisted of 30+ interrelated components, with each team member responsible for modeling multiple parts. The design incorporated realistic motion transfer using a belt/chain assembly to convert pedal input into rotational and reciprocating motion. Key animated elements included the foot pedal, drive wheel, needle mechanism, and lower stitching assembly, demonstrating the full mechanical process required to form a stitch.</p>
+            </div>
+            <div class="goals fade-in">
+                <h1>Project Goals</h1>
+                <p>The team aimed to explore the detailed design of the needle, thread path, and stitching mechanism, with the goal of showcasing these interactions through animation. A key objective was to design a foot-powered drive system capable of operating the entire machine. While full 3D printing of the assembly was considered, practical limitations related to part size and quantity were acknowledged. The project emphasized creating a mechanically meaningful system with real-world relevance, focusing on everyday functionality rather than high-stress structural analysis, making finite element analysis unnecessary.</p>
+            </div>
+            <div class="plan fade-in">
+                <h1>Plan of Attack</h1>
+                <img src="images/sewing/sewing-plan.png" alt="Project Plan">
+                <p>Initially, this project felt a bit daunting due to the sheer number of components involved in a sewing machine. To make the problem more manageable, we spent time brainstorming and breaking the machine down into its fundamental parts and core functions. By simplifying the overall system, we were able to better understand how each component contributes to the machine’s operation. Ultimately, we organized the sewing machine into six main categories, which helped guide our design and modeling process. Within this structure, I was responsible for designing and modeling the case and thread system.</p>
+            </div>
+        </section>
+        <section id="my-parts">
+            <div class="casing fade-in">
+                <h1>Outer Casing</h1>
+                <div class="both-casing fade-in">
+                    <img src="images/sewing/sewingcase1.png" alt="side 1">
+                    <img src="images/sewing/sewingcase2.png" alt="side 2">
+                </div>
+                <p>This model represents the outer casing of the sewing machine, designed to provide structural support and enclosure for the internal mechanisms. The geometry was simplified from the original design to focus on overall form, mounting interfaces, and clearances, while preserving the recognizable proportions of a traditional sewing machine body. Fillets and chamfers were incorporated to improve manufacturability and create a cleaner, more refined appearance for assembly and presentation.</p>
+                <div class="case-drawings fade-in">
+                    <img src="images/sewing/case1-drawing.png" alt="drawing 1">
+                    <img src="images/sewing/case2-drawing.png" alt="drawing 2">
+                </div>
+            </div>
+            <div class="bottom-section fade-in">
+                <h1>Bottom Section Cover</h1>
+                <div class="cover fade-in">
+                    <img src="images/sewing/bottomcover.png" alt="cover">
+                </div>
+                <p>This component serves as the lower protective cover of the sewing machine, enclosing mechanisms located beneath the work surface. It shields internal components from dust, debris, and accidental contact, helping to preserve functionality and extend the lifespan of more delicate parts while also providing structural enclosure and visual continuity to the overall assembly.</p>
+                <div class="cover-drawing fade-in">
+                    <img src="images/sewing/cover-drawing.png" alt="drawing">
+                </div>
+            </div>
+            <div class="sewing-spool fade-in">
+                <h1>Sewing Spool</h1>
+                <div class="spool fade-in">
+                    <img src="images/sewing/sew-spool.png" alt="spool">
+                </div>
+                <p>This component functions as the sewing machine’s thread spool, designed to securely hold the thread while allowing for smooth, controlled unwinding during operation. The central mounting hole enables the spool to be fixed to the outer housing, ensuring proper alignment and consistent thread feeding into the machine’s internal mechanisms.</p>
+                <div class="spool-drawing fade-in">
+                    <img src="images/sewing/spool-drawing.png" alt="drawing">
+                </div>
+            </div>
+            <div class="sewing-axle fade-in">
+                <h1>Axle</h1>
+                <div class="axle fade-in">
+                    <img src="images/sewing/sew-axle.png" alt="axle">
+                </div>
+                <p>This component functions as an axle within the sewing machine assembly, providing rotational support for attached components while maintaining precise alignment. The cylindrical shaft allows for smooth rotation, while the squared ends enable secure mounting and torque transfer to connected parts, ensuring stable and consistent motion during operation.</p>
+                <div class="axle-drawing fade-in">
+                    <img src="images/sewing/axle-drawing.png" alt="drawing">
+                </div>
+            </div>
+        </section>
+        <section id="assembly">
+            <div class="final-assembly fade-in">
+                <h1>Final Assembly</h1>
+                <div class="assembly fade-in">
+                    <img src="images/sewing/sewing-machine1.png" alt="machine">
+                    <img src="images/sewing/sewing-machine2.png" alt="machine">
+                </div>
+                <p>This final assembly brings together all modeled components into a cohesive, functional sewing machine system. The design integrates the machine casing, needle mechanism, thread spool, belt-driven power transmission, and foot pedal assembly into a unified structure mounted on a supporting table. The pedal-driven mechanism translates user input into rotational motion through a belt and pulley system, driving the needle operation above the work surface. The assembly emphasizes clear mechanical relationships, realistic motion paths, and proper component alignment, resulting in a complete representation of a traditional mechanically powered sewing machine.</p>
+            </div>
+            <div class="assembly-vid fade-in">
+                <h1>Assembly Animation</h1>
+                <div class="assembly-animate">
+                    <video 
+                        controls 
+                        muted 
+                        playsinline 
+                        preload="metadata">
+                        <source src="images/sewing/sewing-animation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>This animation demonstrates the fully assembled sewing machine, highlighting how individual components come together into a cohesive mechanical system. The motion study illustrates the pedal-driven power transmission, where user input at the foot pedal is transferred through a belt and pulley system to drive the needle mechanism above the work surface. Overall, the animation emphasizes component alignment, mechanical relationships, and the functional flow of motion throughout the machine.</p>
+            </div>
+        </section>
+        <section id="fea">
+            <h1>Finite Element Analysis (FEA)</h1>
+            <div class="rationale fade-in">
+                <h1>Analysis Rationale</h1>
+                <div class="support-beam fade-in">
+                    <img src="images/sewing/fea-rationale.png" alt="support beam">
+                </div>
+                <p>A static finite element analysis was conducted on the foot pedal support beam to evaluate its ability to withstand repeated user loading while maintaining structural rigidity. The beam was modeled using an alloy steel material and subjected to an approximate 100 lb applied load at the pedal contact points, representing realistic operating conditions. Fixed supports were applied at the table sidewall mounting locations to reflect the beam’s in-assembly constraints. The analysis ensured the beam could resist deformation and provide stable support for the pedal during use.</p>
+            </div>
+            <div class="fea-results fade-in">
+                <h1>FEA Results</h1>
+                <div class="fea-images fade-in">
+                    <img src="images/sewing/fea-displacement.png" alt="displacement">
+                    <img src="images/sewing/fea-stress.png" alt="stress">
+                </div>
+                <p>The static finite element analysis showed that the foot pedal support beam remains structurally sound under the applied loading conditions. The maximum von Mises stress reached approximately <strong>391.7 MPa</strong>, which remains below the assumed material yield strength of <strong>620.4 MPa</strong>, indicating that the beam operates safely within the elastic regime. The maximum displacement was approximately <strong>5.8 mm</strong>, occurring near the center of the beam, which is acceptable for maintaining pedal stability and functionality during use. Based on the analysis, the beam is not expected to fail under the applied loading and exhibits an estimated <strong>safety factor of ~1.6</strong>. These results confirm that the beam provides sufficient strength and stiffness to support repeated user loading without permanent deformation. If additional stiffness or margin were required, potential design improvements include increasing the beam diameter or reducing the table width to shorten the effective span length.</p>
+            </div>
+        </section>
+        <section id="conclusion" class="fade-in">
+            <h1>Project Reflection</h1>
+            <p>This project highlighted the importance of simplifying complex mechanical systems into well-defined subsystems in order to manage both design and analysis effectively. Modeling each component with assembly constraints in mind improved alignment, motion consistency, and overall system integration in the final assembly. Conducting structural analysis on critical load-bearing components reinforced the role of validation in mechanical design, beyond visual or geometric correctness. If revisiting the project, additional time would be spent refining tolerances, improving manufacturability considerations, and further validating load assumptions to enhance durability and realism.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+
