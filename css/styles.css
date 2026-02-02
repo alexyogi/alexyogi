@@ -206,6 +206,110 @@ section {
     padding: 25px 0;
 }
 
+.photo-preview-section {
+  margin: 60px 0;
+}
+
+.photo-preview-section .section-header {
+  margin-bottom: 18px;
+}
+
+.photo-preview-section h2 {
+  margin: 0 0 8px 0;
+}
+
+.photo-preview-section p {
+  margin: 0;
+  max-width: 650px;
+  opacity: 0.85;
+}
+
+/* Masonry using CSS columns (simple + works great) */
+.photo-masonry {
+  column-count: 3;
+  column-gap: 16px;
+  margin-top: 18px;
+}
+
+.photo-card {
+  break-inside: avoid;
+  margin: 0 0 16px 0;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.25s ease;
+}
+
+/* Overlay */
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 14px;
+  background: rgba(0, 0, 0, 0);       /* starts transparent */
+  transition: background 0.25s ease, opacity 0.25s ease;
+}
+
+.photo-meta {
+  width: 100%;
+  color: #fff;
+  opacity: 0;                         /* hidden until hover */
+  transform: translateY(6px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.photo-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.photo-sub {
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.photo-card:hover img {
+  transform: scale(1.01);
+}
+
+.photo-card:hover .photo-overlay {
+  background: rgba(0, 0, 0, 0.35);    /* fade darker */
+}
+
+.photo-card:hover .photo-meta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .photo-masonry { column-count: 2; }
+}
+
+@media (max-width: 600px) {
+  .photo-masonry { column-count: 1; }
+}
+
+/* Center the View All button */
+.photo-cta {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.photo-more {
+    padding: 25px 0;
+}
+
 /* --- Footer --- */
 footer {
     background: #333;
